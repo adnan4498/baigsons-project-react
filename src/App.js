@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import myVideo from "../src/videos/maintanance-video-compressed.mp4";
+import Navbar from "./components/Navbar";
+import HomeVideoComponent from "./homeComponents/HomeVideoComponent";
+import CarouselSection from "./homeComponents/CarouselSection";
+import ProfessionalServices from "./homeComponents/ProfessionalServices";
+import SoftHardServices from "./homeComponents/SoftHardServices";
+import WhyUs from "./homeComponents/WhyUs";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <HomeVideoComponent />
+      <CarouselSection />
+      <ProfessionalServices />
+      <SoftHardServices />
+      <WhyUs />
+      <Footer />
+    </>
   );
 }
 
